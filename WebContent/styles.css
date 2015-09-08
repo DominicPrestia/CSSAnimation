@@ -1,0 +1,58 @@
+html,body { height: 100%; width:100%;}
+
+body{
+	margin:0px;
+	padding:0px;
+}
+
+
+div{
+}
+
+.container{
+	text-align: center;
+}
+
+#danceButton{
+	position:relative;
+	font-size: 2.0em;
+	margin-top:100px;
+	margin-bottom:100px;
+	left: 50%;
+	right: 50%;
+}
+
+.boxBorder{
+	display:inline-block;
+	background-color:#d8d8d8;
+	margin:10px;
+	height: 200px;
+	width:200px;
+	border:3px solid black;
+}
+
+.box{
+	position:relative;
+	background-color: blue;
+	height: 50px;
+	width: 50px;
+	margin:75px;
+}	
+
+.clearDiv{
+	clear:both;
+}
+
+.rotate{
+	-webkit-animation: rotation 2s 1;
+}
+
+@-webkit-keyframes rotation {
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
