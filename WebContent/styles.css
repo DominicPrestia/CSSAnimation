@@ -13,13 +13,22 @@ div{
 	text-align: center;
 }
 
+.buttonContainer{
+	text-align:center;
+	margin:0 auto;
+}
+
 #danceButton{
 	position:relative;
 	font-size: 2.0em;
 	margin-top:100px;
 	margin-bottom:100px;
-	left: 50%;
-	right: 50%;
+}
+
+@media only screen and (max-width: 1000px){
+	#danceButton{
+		background-color:red;
+	}
 }
 
 .boxBorder{
@@ -43,10 +52,17 @@ div{
 	clear:both;
 }
 
+/*These are the animation classes: (animation name) (duration) (number of times to be played); */
 .rotate{
 	-webkit-animation: rotation 2s 1;
 }
 
+.scale{
+	-webkit-animation: scaling 2s 1;
+	-webkit-animation-timing-function: linear;
+}
+
+/*These are the animations defined*/
 @-webkit-keyframes rotation {
 	0%{
 		-webkit-transform: rotate(0deg);
@@ -55,4 +71,41 @@ div{
 	100%{
 		-webkit-transform: rotate(360deg);
 	}
+}
+
+@-webkit-keyframes scaling{
+	0%{
+		transform:scale(1.3);
+	}
+	10% {
+		transform:scale(1.6);
+	}
+	
+	20% {
+		transform:scale(1.9);
+	}
+	30% {
+		transform:scale(2.2);
+	}
+	40% {
+		transform:scale(2.5);
+	}
+	50% {
+		transform:scale(2.8);
+	}
+	60%{
+		transform:scale(2.5);
+	}
+	70% {
+		transform:scale(2.2);
+	}
+	80% {
+		transform:scale(1.9);
+	}
+	90% {
+		transform:scale(1.6);
+	}
+	100% {
+		transform:scale(1.3);
+	}				
 }
